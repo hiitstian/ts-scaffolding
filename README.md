@@ -1,0 +1,1 @@
+Minimal scaffolding for starting a new TS project.
