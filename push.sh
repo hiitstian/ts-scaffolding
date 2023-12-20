@@ -4,5 +4,7 @@ then
     exit 1 
 else
     curr_branch=$(git rev-parse --abbrev-ref HEAD)
-    git add . && git commit -m "$1" && git push github $curr_branch
+    git add . && git commit -m "$1" \
+    && git push github $curr_branch \
+    && git push gitee $curr_branch
 fi
